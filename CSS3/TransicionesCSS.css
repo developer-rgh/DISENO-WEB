@@ -1,0 +1,43 @@
+div {
+    width: 200px;
+    height: 200px;
+    margin: 70px;
+    float: left;
+}
+
+.elemento1 {
+    background: #1aa9ed;
+}
+
+.elemento1:hover {
+    transform: rotate(130deg);
+    background: blue;
+    cursor: pointer;
+}
+
+.elemento-transicion {
+    background: #00dd73;
+    /*Propiedades de transición*/
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 300ms;
+    transition-timing-function: ease-out;
+}
+
+.elemento-transicion:hover {
+    background: green;
+    transform: rotate(130deg);
+    cursor: pointer;
+}
+
+.elemento-transicion-2 {
+    background: #ff4949;
+    /*Propiedades de transición atajo*/
+   transition: all 1s ease-out 300ms;
+}
+
+.elemento-transicion-2:hover {
+    background: red;
+    transform: rotate(180deg);
+    cursor: pointer;
+}

@@ -1,0 +1,41 @@
+h1 {
+
+    /*Estilos de texto*/
+    font-size: 12px;
+    font-weight: 700;
+    font-style: italic;
+    color: red;
+    cursor: pointer;
+
+    /*Espaciado Letras*/
+    letter-spacing: 20px;
+
+    /*Espaciado de Palabras*/
+    word-spacing: 50px;
+
+    /*Interlineado*/
+    line-height: 100px;
+
+    /*Sangria*/
+    text-indent: 50px;
+}
+
+/*Alineación de texto: Izquierda*/
+h2{
+    text-align: left;
+}
+
+/*Alineación de texto: Centrado*/
+h3{
+    text-align: center;
+}
+
+/*Alineación de texto: Derecha*/
+h4{
+    text-align: right;
+}
+
+/*Alineación de texto: Justificado*/
+h5{
+    text-align: justify;
+}

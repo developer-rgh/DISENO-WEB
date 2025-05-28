@@ -1,0 +1,25 @@
+ /*Fuentes basicas: Son fuentes que ya estan incluidas en los principales navegadores.*/
+ h2 {
+    font-family:'Times New Roman', Times, serif;
+  }
+
+  /*Fuentes externas: Se cargan desde sitios externos, es necesario tener internet.*/
+  p {
+    font-family: "Tuffy", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /*Fuentes descargadas: */
+  @font-face {
+    font-family: "Shadows Into Light";
+    src: url(../assets/fonts/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf);
+  }
+
+  h3 {
+    font-family: "Shadows Into Light";
+  }
+
+  i{
+    padding: 5px;
+  }

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Registro</title>
+  </head>
+  <body>
+    <h2>Etiquetas Para Formularios</h2>
+    <form action="EtiquetaFormulario.html" method="post">
+      <fieldset>
+        <legend>Registro de usuario</legend>
+
+        <label for="nombre">Nombre:</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          required
+          placeholder="Ingrese Nombre"
+        /><br /><br />
+
+        <label for="email">Correo electrónico:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          autofocus
+        /><br /><br />
+
+        <label for="password">Contraseña:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+        /><br /><br />
+
+        <label for="edad">Edad:</label>
+        <input
+          type="number"
+          id="edad"
+          name="edad"
+          min="1"
+          max="100"
+        /><br /><br />
+
+        <label for="rango">Rango:</label>
+        <input type="range" id="rango" name="rango" /><br /><br />
+
+        <label for="pais">País:</label>
+        <select id="pais" name="pais">
+          <option value="mx">México</option>
+          <option value="co">Colombia</option>
+          <option value="ar">Argentina</option>
+          <option value="es">España</option></select
+        ><br /><br />
+
+        <label for="pasatiempo">Pasatiempos:</label>
+        <select id="pasatiempo" name="pasatiempo" multiple>
+          <option value="1">Leer</option>
+          <option value="2">Video Juegos</option>
+          <option value="3">Deportes</option>
+          <option value="4">Escuchar Musica</option></select
+        ><br /><br />
+
+        <label for="fechahora"> Datalist: </label>
+        <input type="text" list="items" /><br /><br />
+        <datalist id="items">
+          <option value="mx">México</option>
+          <option value="co">Colombia</option>
+          <option value="ar">Argentina</option>
+          <option value="es">España</option>
+        </datalist>
+
+        <label for="genero">Género:</label>
+        <input type="radio" name="genero" value="Masculino" /> Masculino
+        <input type="radio" name="genero" value="Femenino" />
+        Femenino<br /><br />
+
+        <label>Sitio Web:</label>
+        <input type="url" name="web" /><br /><br />
+
+        <label for="comentario">Comentarios:</label><br />
+        <textarea id="comentario" name="comentario"></textarea><br /><br />
+
+        <label for="busqueda"> Busqueda: </label>
+        <input type="search" name="busqueda" id="busqueda" /><br /><br />
+
+        <label for="fecha"> Fecha: </label>
+        <input type="date" name="fecha" id="fecha" /><br /><br />
+
+        <label for="hora"> Hora: </label>
+        <input type="time" name="hora" id="hora" /><br /><br />
+
+        <label for="fechahora"> Fechay Hora: </label>
+        <input
+          type="datetime-local"
+          name="fechahora"
+          id="fechahora"
+        /><br /><br />
+
+        <label for="color"> Color: </label>
+        <input type="color" name="color" id="color" /><br /><br />
+
+        <label for="archivo"> Seleccione un archivo: </label>
+        <input
+          type="file"
+          name="archivo"
+          id="archivo"
+          accept="image/png, image/jpeg"
+        /><br /><br />
+
+        <input type="checkbox" name="terminos" required /> Acepto los
+        términos<br /><br />
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+      </fieldset>
+    </form>
+
+    <!-- Barra de progreso -->
+    <progress max="100" value="33"></progress>
+
+    <h2>Validación De Formularios</h2>
+    <form action="EtiquetaFormulario.html" method="get">
+      <fieldset>
+        <legend>Registro de usuario</legend>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          required
+          placeholder="Nombre"
+        /><br /><br />
+
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Correo"
+          disabled
+        /><br /><br />
+
+        <input
+          type="text"
+          id="rol"
+          name="rol"
+          value="Administrador"
+          placeholder="Rol"
+          readonly
+        /><br /><br />
+
+        <label for="pass"> Contraseña: </label><br>
+        <input
+          type="password"
+          id="pass"
+          name="pass"
+          minlength="4"
+          maxlength="20"
+          title="Contraseña de minimo 4 caracteres."
+        /><br /><br />
+
+        <input
+          type="number"
+          id="edad"
+          name="edad"
+          min="18"
+          max="90"
+          title="Edad de 18 a 90 años."
+          placeholder="Edad"
+        /><br /><br />
+
+        <input
+          type="text"
+          name="patern"
+          id="patern"
+          title="Dos letras y tres numeros."
+          pattern="[a-z]{2}[0-9]{3}"
+          placeholder="2 letras 3 numeros"
+        />
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

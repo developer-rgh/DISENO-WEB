@@ -1,0 +1,65 @@
+/* Paso 1: Crear Key Frame (Pelicula)*/
+@keyframes cambiarColor {
+  0% {
+    background: green;
+  }
+
+  20% {
+    background: blue;
+  }
+
+  40% {
+    background: orange;
+  }
+
+  60% {
+    background: yellow;
+  }
+
+  80% {
+    background: purple;
+  }
+
+  100% {
+    background: red;
+  }
+}
+
+/* Paso 2: Aplicar propieades de animación */
+.ani {
+    width: 400px;
+    height: 400px;
+    background: gray;
+    margin: auto;
+    margin-top: 50px;
+
+    /* Propiedades de animación */
+    animation-name: cambiarColor;
+    animation-duration: 10s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: backwards;
+    animation-play-state: paused;
+}
+
+.ani:hover {
+    animation-play-state: running;
+    cursor: pointer;
+}
+
+.ani-atajo {
+    width: 500px;
+    height: 500px;
+    background: black;
+    margin: auto;
+    margin-top: 50px;
+
+    /* Propiedades de animación atajo*/
+    animation: cambiarColor 10s 0.5ms infinite normal forwards paused;
+}
+
+.ani-atajo:hover {
+    animation-play-state: running;
+    cursor: pointer;
+}
